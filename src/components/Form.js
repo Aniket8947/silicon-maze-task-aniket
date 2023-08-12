@@ -23,7 +23,7 @@ export default function Form() {
             <div className="form">
                 {errorMessage && <div className="error">{errorMessage}</div>}
                 <div className="inputContainer">
-                    <label htmlFor="fname">Last name:</label>
+                    <label htmlFor="fname">First name:</label>
                     <input
                         type="text"
                         id="fname"
