@@ -13,8 +13,44 @@ export default function Form() {
     // give "Invalid password" error message if password is not valid
     // give "Invalid email address" error message if email address is not valid
 
-    const validateForm = () => {
+    function ValidateEmail(EmailId) {
+        const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      
+        if (emailRegex.exec(EmailId)) {
+          alert("Email is valid");
+          return true;
+        } 
+          alert("You have entered an invalid email address!");
+          return false;
+      }
+      function ValidateName(firstName) {
+        if (/^[A-Z][a-z]*$/.test(firstName)) {
+          alert( firstName +" is valid");
+          return true;
+        }
+        alert("You have entered an invalid " + firstName);
+        return false;
+      }
+      
+      function ValidatePassword(password) {
+        if (
+          /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&!])[A-Za-z\d@#$%^&!]+$/.test(password)
+        ) {
+          alert("Password is valid");
+          return true;
+        }
+        alert(
+          "Password must contain at least 1 uppercase letter, 1 lowercase letter, 1 symbol, and 1 number."
+        );
+        return false;
+      }
+      
 
+    const validateForm = () => {
+        ValidateEmail(EmailId);
+        ValidateName(FirstName);
+        ValidateName(LastName);
+        ValidatePassword(Password);
     };
 
 
@@ -58,7 +94,7 @@ export default function Form() {
                 <div className="inputContainer">
                     <label htmlFor="email">Email:</label>
                     <input
-                        type="text"
+                        type="email"
                         id="email"
                         name="email"
                         className="input"
