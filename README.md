@@ -1,28 +1,8 @@
 # Silicon Maze Task
 
-### Task
+### Deployed Link
 
-complete `submitHandler` function in [Form](/src/components/Form.js) to validate the form when user click submit.
-
-### Validation Conditions
-
-1. Password should contain atleast 1 Capital letter,1 Small letter, 1 Symbol, 1 Number.
-2. First Name and Last Name should start with capital Letter
-3. Validate input of email field for valid email Id.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Steps to start working with this Task
-
-1. Fork this repo by clicking "Fork"
-2. clone this repo to start working on this task on your local system
-   ```bash
-
-   git clone (link of your forked repo)
-
-   ```
-3. you can run `npm start` to start react-app
-4. you have to edit `submitHandler` function in [Form](src/components/Form.js)
+https://silicon-maze-task-aniket.vercel.app/
 
 ### `npm start`
 
