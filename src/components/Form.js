@@ -28,7 +28,7 @@ export default function Form() {
           alert( firstName +" is valid");
           return true;
         }
-        alert("You have entered an invalid " + firstName);
+        alert("It should start with capital only ");
         return false;
       }
       
